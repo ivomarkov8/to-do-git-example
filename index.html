@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>TO DO</title>
+  </head>
+  <body>
+    <div class="background"></div>
+    <h1>Svetozar's To Do homework</h1>
+    <input type="text" placeholder="What to do?" />
+    <button id="add-to-do-btn">Add</button>
+
+    <select id="todo-source-select">
+      <option value="local">Local TODOs</option>
+      <option value="remote">Remote TODOs</option>
+    </select>
+
+    <div id="to-do-container">
+      <div id="to-do-container-in-progress"></div>
+      <div id="to-do-container-done"></div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
