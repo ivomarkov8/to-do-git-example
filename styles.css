@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&family=Poor+Story&display=swap");
+
+body {
+  text-align: center;
+  font-family: "Poor Story", cursive;
+}
+
+.background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: repeating-linear-gradient(
+    #008f263e,
+    #008f263e 20px,
+    #9198e53e 20px,
+    #9198e53e 25px
+  );
+  background-size: contain;
+  background-position: fixed;
+  z-index: -1;
+}
+
+.to-do-instance {
+  /* border: 1px solid black; */
+  margin: 10px 0;
+  width: 300px;
+  margin: 20px auto;
+  display: flex;
+  flex-wrap: wrap;
+  border-radius: 10px;
+  background-color: rgb(255, 255, 122);
+  height: fit-content;
+  padding: 20px;
+}
+
+.to-do-instance p {
+  width: 270px;
+}
+
+.to-do-instance button {
+  width: 30px;
+  height: 30px;
+  margin: auto;
+  background-color: inherit;
+  outline: none;
+  border: none;
+  opacity: 0.2;
+  transition: all 0.3s ease-out;
+}
+
+.to-do-instance button:hover {
+  transform: scale(1.1);
+  opacity: 1;
+  cursor: pointer;
+}
+
+.to-do-date {
+  width: 100%;
+}
+
+input {
+  height: 10px;
+  width: 230px;
+  padding: 10px;
+}
+
+button {
+  cursor: pointer;
+  height: 35px;
+  width: fit-content;
+  border: none;
+  background-color: rgba(240, 248, 255);
+  opacity: 0.3;
+  transition: all 0.2s ease-in;
+  padding: 0 20px;
+}
+
+button:hover {
+  opacity: 1;
+}
+
+#to-do-container {
+  display: flex;
+  flex-direction: row;
+}
+
+#to-do-container-in-progress {
+  width: 50%;
+}
+#to-do-container-done {
+  width: 50%;
+}
+
+input[type="checkbox"] {
+  height: 22px;
+  width: 22px;
+}
+
+select {
+  width: fit-content;
+  padding: 10px;
+  background: rgba(240, 248, 255, 0.3);
+  border: none;
+  margin-left: 15px;
+}
+
+select:focus-visible {
+  border: none;
+  outline: inherit;
+}
